@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", sans-serif;
+
+  --color-tumbuh-green: #6CD887;
+  --color-tumbuh-green-dark: #277A43;
+  --color-tumbuh-green-soft: #99DDAB;
+
+  --color-tumbuh-bg: #F4FAF9;
+  --color-tumbuh-card: #FFFFFF;
+  --color-tumbuh-mint: #A1E9D5;
+
+  --color-tumbuh-blue: #A9D3F6;
+  --color-tumbuh-yellow: #FCD351;
+  --color-tumbuh-red: #EDA09E;
+
+  --color-tumbuh-text: #171717;
+  --color-tumbuh-muted: #8E9491;
+  --color-tumbuh-border: #D8DEDB;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-tumbuh-bg);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family: var(--font-sans);
+  color: var(--color-tumbuh-text);
+
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f4faf9 55%,
+    #e8ffff 100%
+  );
+
+  html {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+  }
+}
+}
